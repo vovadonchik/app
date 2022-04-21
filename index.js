@@ -1,5 +1,10 @@
-3 + 2
+const name = 'Vladimir'
+const postsQty = 26
 
-'Vladimir'
+const userProfile = {
+    name,
+    postsQty,
+    human: true
+}
 
-Vladimir
+console.log(userProfile)
