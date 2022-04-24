@@ -1,27 +1,14 @@
 const myBosik = {
-    krasiviy: true,
-    friends: 'Vovchina, Levani',
-    city: 'Moscow',
-    cityGreeting() {
-        console.log('Privet Bosik')
-    }
+    name: 'Antoshka',
+    age: 28
 }
 
-myBosik1 = myBosik
-
-myBosik1.mDenchik = 'kakashka'
-
-const name = 'Vovan'
-const serName = 'Kiselov'
-
-const vovadonchik = {
-    name,
-    serName,
-    age: 26
+function increasePersonAge (bosik) {
+    const updatePerson = Object.assign({}, bosik)
+    updatePerson.age += 1
+    return updatePerson
 }
 
-console.table(vovadonchik)
-
-console.table(myBosik1)
-
-myBosik.cityGreeting()
+const updatedPersonOne = increasePersonAge(myBosik)
+console.log(myBosik.age)
+console.log(updatedPersonOne.age)
